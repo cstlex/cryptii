@@ -1,0 +1,25 @@
+{
+    "name": "cryptii",
+    "version": "1.0.0",
+    "description": "Cryptii Desktop Version",
+    "main": "index.js",
+    "repository": "git@github.com:cstlex/cryptii.git",
+    "author": "Minsoo Kim",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^22.0.0",
+        "electron-builder": "^23.6.0"
+    },
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "appId": "dev.minsoo.cryptii",
+        "productName": "Cryptii",
+        "mac": {
+            "category": "public.app-category.developer-tools"
+        }
+    }
+}
